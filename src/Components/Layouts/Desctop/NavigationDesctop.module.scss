@@ -1,0 +1,66 @@
+.menu {
+  background: linear-gradient(90deg, #309602 0%, #82D418 100%, #98DB45 100%);
+  margin-top: 30px;
+  padding: 5px 0;
+  z-index: 9;
+  position: relative;
+  .menumobile {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    width: 40%;
+  }
+  a {
+    font-family: 'Montserrat700';
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 26px;
+    font-weight: 400;
+    &:hover {
+      color: #505050;
+    }
+    &.active {
+      color: red;
+    }
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  background: #ebebeb;
+  position: absolute;
+  z-index: 9;
+  a {
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat700';
+    color: black;
+    border: 1px solid white;
+    font-size: 1em;
+    &.active {
+      color: red;
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .menu {
+    a {
+      font-size: 22px;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .menu {
+    a {
+      font-size: 16px;
+    }
+  }
+}

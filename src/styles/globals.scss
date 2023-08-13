@@ -1,0 +1,97 @@
+$grid-columns: 24;
+//Импорты
+@import './Bootstrap5/bootstrap';
+@import './quill.core.css';
+
+
+//Импорт шрифтов
+@font-face {
+  font-family: 'Montserrat400';
+  src: url('../public/fonts/Montserrat-Regular.eot');
+  src: url('../public/fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../public/fonts/Montserrat-Regular.woff2') format('woff2'),
+  url('../public/fonts/Montserrat-Regular.woff') format('woff'),
+  url('../public/fonts/Montserrat-Regular.ttf') format('truetype'),
+  url('../public/fonts/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat700';
+  src: url('../public/fonts/Montserrat-Bold.eot');
+  src: url('../public/fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../public/fonts/Montserrat-Bold.woff2') format('woff2'),
+  url('../public/fonts/Montserrat-Bold.woff') format('woff'),
+  url('../public/fonts/Montserrat-Bold.ttf') format('truetype'),
+  url('../public/fonts/Montserrat-Bold.svg#Montserrat-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat300';
+  src: url('../public/fonts/Montserrat-Light.eot');
+  src: url('../public/fonts/Montserrat-Light.eot?#iefix') format('embedded-opentype'),
+  url('../public/fonts/Montserrat-Light.woff2') format('woff2'),
+  url('../public/fonts/Montserrat-Light.woff') format('woff'),
+  url('../public/fonts/Montserrat-Light.ttf') format('truetype'),
+  url('../public/fonts/Montserrat-Light.svg#Montserrat-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat600';
+  src: url('../public/fonts/Montserrat-SemiBold.eot');
+  src: url('../public/fonts/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('../public/fonts/Montserrat-SemiBold.woff2') format('woff2'),
+  url('../public/fonts/Montserrat-SemiBold.woff') format('woff'),
+  url('../public/fonts/Montserrat-SemiBold.ttf') format('truetype'),
+  url('../public/fonts/Montserrat-SemiBold.svg#Montserrat-SemiBold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'Montserrat400';
+  font-size: 18px;
+  //background-image: url(../public/animation/img/bg.jpg);
+}
+.ql-editor {
+  a {
+    color: #0ce531fc;
+    &:hover {
+      color: #0cd1e5;
+    }
+  }
+  .ql-video {
+    max-width: 50%!important;
+    margin: 0 auto!important;
+  }
+}
+
+#particles-js{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.fond_text {
+  font-size: 18px;
+  padding: 0 50px;
+  line-height: 1.6;
+  text-indent: 40px;
+  margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .fond_text {
+    font-size: 14px;
+  }
+}

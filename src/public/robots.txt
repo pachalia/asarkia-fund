@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+Allow: /civil
+Allow: /civil/*
+Allow: /blog
+Allow: /blog/*
+Allow: /culture
+Allow: /culture/*
+Disallow: /admin
+Disallow: /api
+sitemap: https://andreypachalia.ru/sitemap.xml
+
+
+
+

@@ -1,0 +1,29 @@
+.menu {
+  background: linear-gradient(90deg, #309602 0%, #82D418 100%, #98DB45 100%);
+  margin-top: 30px;
+  padding: 5px 0;
+  z-index: 9;
+  position: relative;
+  .menumobile {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    width: 40%;
+  }
+  a {
+    font-family: 'Montserrat700';
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 26px;
+    font-weight: 400;
+    &:hover {
+      color: #505050;
+    }
+    &.active {
+      color: red;
+    }
+  }
+}

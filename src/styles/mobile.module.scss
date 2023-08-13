@@ -1,0 +1,11 @@
+.card {
+  margin-bottom: 20px;
+  a {
+    text-decoration: none;
+    font-family: 'Montserrat700';
+    color: #2f8705;
+    &:hover {
+      color: #82d418;
+    }
+  }
+}
